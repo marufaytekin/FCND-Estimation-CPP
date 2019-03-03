@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import numpy as np
 
 gps_x_data = np.loadtxt('config/log/Graph1.txt',delimiter=',',dtype='Float64',skiprows=1)[:,1]
