@@ -168,7 +168,7 @@ VectorXf QuadEstimatorEKF::PredictState(VectorXf curState, float dt, V3F accel, 
   Quaternion<float> attitude = Quaternion<float>::FromEuler123_RPY(rollEst, pitchEst, curState(6));
 
   ////////////////////////////// BEGIN STUDENT CODE ///////////////////////////
-  
+  // Equation 49
   predictedState(0) = curState(0) + curState(3) * dt;
   predictedState(1) = curState(1) + curState(4) * dt;
   predictedState(2) = curState(2) + curState(5) * dt;
